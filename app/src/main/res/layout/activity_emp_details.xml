@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="人员姓名："
+                style="@style/NormalBlackTextView"
+                android:gravity=""/>
+            <TextView
+                android:id="@+id/tv_emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                style="@style/NormalBlackTextView" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="起始有效期："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_available_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016-02-01 00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="截止有效期："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_expire_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016-02-01 00:00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="人员类型"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_emp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="短期"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="身份证号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_citizen_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="市民卡号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_city_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18366779988"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="人员职务："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_career"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人事"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="人员电话："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="李斯特"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="所属单位："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_dept_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="苏A1234"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="管理员单位："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_owner_org"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="民政局"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:id="@+id/btn_delete"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="审批通过"
+        android:id="@+id/btn_approve"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="审批不通过"
+        android:id="@+id/btn_disapprove"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</LinearLayout>

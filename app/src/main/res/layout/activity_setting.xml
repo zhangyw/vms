@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_94"
+        android:padding="8dp"
+        android:text="ITS平台"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器地址："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:minEms="6"/>
+
+            <EditText
+                android:id="@+id/et_its_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonEditText"
+                android:text="@string/its_address"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:minEms="6"/>
+
+            <EditText
+                android:id="@+id/et_its_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonEditText"
+                android:text="@string/its_port"
+                android:inputType="number"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_94"
+            android:padding="8dp"
+            android:text="视频监控"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:layout_marginTop="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器地址："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:minEms="6"/>
+
+            <EditText
+                android:id="@+id/et_video_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonEditText"
+                android:text="@string/video_address"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:minEms="6"/>
+
+            <EditText
+                android:id="@+id/et_video_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonEditText"
+                android:text="@string/video_port"
+                android:inputType="number"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

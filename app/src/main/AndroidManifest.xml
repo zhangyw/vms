@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nanjing.vms">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".VmsApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleEditActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleBlackListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehiclePendingListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleSearchListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleLogsListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VehicleLogsSearchListActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpSearchListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpDetailsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpEditActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpLogListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpLogSearchListActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EmpPendingListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hik.login.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hik.resource.ResourceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hik.live.LiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hik.playback.PlayBackActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.hik.login.ServerSettingActivity"
+            android:screenOrientation="portrait" />
+        -->
+
+        <activity
+            android:name=".activity.NetworkTestActivity"
+            android:label="@string/title_activity_network_test"></activity>
+    </application>
+
+</manifest>

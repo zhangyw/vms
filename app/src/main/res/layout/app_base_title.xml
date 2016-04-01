@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="48dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/title_lefttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_common_button_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/title_button_padding"
+            android:paddingRight="@dimen/title_button_padding"
+            android:text="左侧文字"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_leftimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_common_button_selector"
+            android:paddingLeft="@dimen/title_button_padding"
+            android:paddingRight="@dimen/title_button_padding"
+            android:src="@mipmap/btn_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_centertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/title_centerimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_righttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_common_button_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/title_button_padding"
+            android:paddingRight="@dimen/title_button_padding"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_rightimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_common_button_selector"
+            android:paddingLeft="@dimen/title_button_padding"
+            android:paddingRight="@dimen/title_button_padding"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

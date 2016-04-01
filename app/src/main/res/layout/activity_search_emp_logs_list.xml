@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/content_backgroud">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="起始有效期："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:background="@drawable/bg_edittext"
+                android:padding="8dp"
+                android:drawableRight="@mipmap/arrow_down"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="起始有效期："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:background="@drawable/bg_edittext"
+                android:padding="8dp"
+                android:drawableRight="@mipmap/arrow_down"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="6"
+                android:text="查询条件："
+                style="@style/NormalBlackTextView"
+                android:gravity=""/>
+            <EditText
+                android:id="@+id/et_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CommonEditText"
+                android:hint="姓名/身份证号/市民卡号/通行地点"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/btn_search"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            android:id="@+id/layout_ptr"
+            style="@style/PtrFrameLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.nanjing.vms.views.ptrloadmore.LoadMoreListViewContainer
+                android:id="@+id/load_more_list_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/ListViewStyle"></ListView>
+            </com.nanjing.vms.views.ptrloadmore.LoadMoreListViewContainer>
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

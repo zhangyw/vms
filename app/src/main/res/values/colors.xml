@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <drawable name="white_color">#ffffff</drawable>
+
+    <color name="colorMeTitle">#0669b4</color>
+
+    <color name="content_backgroud">#e8e8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_ec">#ECECEC</color>
+    <color name="gray_47">#474747</color>
+    <color name="gray_translucent">#7f474747</color>
+    <color name="gray_e9">#E9E9E9</color>
+    <color name="gray_94">#949494</color>
+    <color name="gray_9b">#9b9b9b</color>
+    <color name="green">#67c681</color>
+    <color name="blue">#4ba9e9</color>
+    <color name="brown">#e59a73</color>
+    <color name="pink">#fc6472</color>
+    <color name="blue_04">#0468b4</color>>
+
+
+    <color name="divider_gray">#d1d1d1</color>
+</resources>

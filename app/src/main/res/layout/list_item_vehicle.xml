@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_plate_license"
+            style="@style/NormalBlackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="车牌号码：苏A12R79" />
+
+        <TextView
+            android:id="@+id/tv_traffic_type"
+            style="@style/NormalBlackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="通行类型：正常通行" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_expire_date"
+            style="@style/NormalBlackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="截至有效期：2016-12-31 23：59" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/NormalBlackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="正常" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="8dp"
+                android:text="视频监控"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <FrameLayout
+                    android:id="@+id/layout_monitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/blue"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="视频监控"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="8dp"
+                android:text="车辆系统"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <FrameLayout
+                    android:id="@+id/layout_vehicle_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/brown"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车辆管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <FrameLayout
+                    android:id="@+id/layout_vehicle_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/brown"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出入管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/brown"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/layout_vehicle_pending">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/brown"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/layout_vehicle_black">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="黑名单管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="8dp"
+                android:text="人员系统"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <FrameLayout
+                    android:id="@+id/layout_emp_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/pink"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人员管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/layout_emp_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/pink"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出入管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/layout_emp_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/pink"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批管理"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

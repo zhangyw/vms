@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <!--<item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>-->
+    </style>
+
+
+    <style name="CommonEditText">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="NormalBlackTextView">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="NormalGreyTextView">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/gray_9b</item>
+    </style>
+
+
+    <style name="PtrFrameLayoutStyle"  >
+        <item name="ptr_resistance">1.7</item>
+        <item name="ptr_ratio_of_header_height_to_refresh">1.2</item>
+        <item name="ptr_duration_to_close">200</item>
+        <item name="ptr_duration_to_close_header">1000</item>
+        <item name="ptr_keep_header_when_refresh">true</item>
+        <item name="ptr_pull_to_fresh">false</item>
+    </style>
+
+    <style name="ListViewStyle">
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+</resources>
